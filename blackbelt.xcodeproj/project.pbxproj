@@ -10,6 +10,10 @@
 		B3072CFE1E5A98C300BDF8D3 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3072CFD1E5A98C300BDF8D3 /* Skill.swift */; };
 		B3072D001E5A98FD00BDF8D3 /* SkillType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3072CFF1E5A98FD00BDF8D3 /* SkillType.swift */; };
 		B33AD1331E5BD9610041B910 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AD1321E5BD9610041B910 /* Constants.swift */; };
+		B374C41F1E622FFB00B3B0CE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B374C41E1E622FFB00B3B0CE /* CoreData.framework */; };
+		B374C4231E62310200B3B0CE /* blackbelt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B374C4211E62310200B3B0CE /* blackbelt.xcdatamodeld */; };
+		B374C4251E62347B00B3B0CE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B374C4241E62347B00B3B0CE /* CoreDataStack.swift */; };
+		B374C4271E637D7800B3B0CE /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B374C4261E637D7800B3B0CE /* Utility.swift */; };
 		B391D6B31E5A20A900F916EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B391D6B21E5A20A900F916EF /* AppDelegate.swift */; };
 		B391D6B51E5A20A900F916EF /* MyBeltViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B391D6B41E5A20A900F916EF /* MyBeltViewController.swift */; };
 		B391D6B71E5A20A900F916EF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B391D6B61E5A20A900F916EF /* CalendarViewController.swift */; };
@@ -48,6 +52,10 @@
 		B3072CFD1E5A98C300BDF8D3 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		B3072CFF1E5A98FD00BDF8D3 /* SkillType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillType.swift; sourceTree = "<group>"; };
 		B33AD1321E5BD9610041B910 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B374C41E1E622FFB00B3B0CE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B374C4221E62310200B3B0CE /* blackbelt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = blackbelt.xcdatamodel; sourceTree = "<group>"; };
+		B374C4241E62347B00B3B0CE /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		B374C4261E637D7800B3B0CE /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		B391D6AF1E5A20A900F916EF /* blackbelt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blackbelt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B391D6B21E5A20A900F916EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B391D6B41E5A20A900F916EF /* MyBeltViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBeltViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B374C41F1E622FFB00B3B0CE /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,13 +105,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B374C41D1E622FFA00B3B0CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B374C41E1E622FFB00B3B0CE /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B374C4201E6230C900B3B0CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B374C4211E62310200B3B0CE /* blackbelt.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		B391D6A61E5A20A800F916EF = {
 			isa = PBXGroup;
 			children = (
 				B391D6B11E5A20A900F916EF /* blackbelt */,
+				B374C4201E6230C900B3B0CE /* Resources */,
 				B391D6C81E5A20A900F916EF /* blackbeltTests */,
 				B391D6D31E5A20A900F916EF /* blackbeltUITests */,
 				B391D6B01E5A20A900F916EF /* Products */,
+				B374C41D1E622FFA00B3B0CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +150,7 @@
 				B391D6BD1E5A20A900F916EF /* LaunchScreen.storyboard */,
 				B33AD1321E5BD9610041B910 /* Constants.swift */,
 				B391D6B21E5A20A900F916EF /* AppDelegate.swift */,
+				B374C4241E62347B00B3B0CE /* CoreDataStack.swift */,
 				B391D6B41E5A20A900F916EF /* MyBeltViewController.swift */,
 				B391D6B61E5A20A900F916EF /* CalendarViewController.swift */,
 				B391D6E21E5A2AAB00F916EF /* BeltsViewController.swift */,
@@ -136,6 +164,7 @@
 				B3072CFF1E5A98FD00BDF8D3 /* SkillType.swift */,
 				B391D6BB1E5A20A900F916EF /* Assets.xcassets */,
 				B391D6C01E5A20A900F916EF /* Info.plist */,
+				B374C4261E637D7800B3B0CE /* Utility.swift */,
 			);
 			path = blackbelt;
 			sourceTree = "<group>";
@@ -220,6 +249,9 @@
 		B391D6A71E5A20A800F916EF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Rebecca Scanlon";
@@ -293,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B374C4251E62347B00B3B0CE /* CoreDataStack.swift in Sources */,
 				B3F07DEB1E5BBB4300C0C1E7 /* SkillsViewController.swift in Sources */,
 				B3F07DED1E5BC9CA00C0C1E7 /* SkillCell.swift in Sources */,
 				B391D6B71E5A20A900F916EF /* CalendarViewController.swift in Sources */,
@@ -304,7 +337,9 @@
 				B391D6B31E5A20A900F916EF /* AppDelegate.swift in Sources */,
 				B3072CFE1E5A98C300BDF8D3 /* Skill.swift in Sources */,
 				B391D6E71E5A33F400F916EF /* Belt.swift in Sources */,
+				B374C4271E637D7800B3B0CE /* Utility.swift in Sources */,
 				B3072D001E5A98FD00BDF8D3 /* SkillType.swift in Sources */,
+				B374C4231E62310200B3B0CE /* blackbelt.xcdatamodeld in Sources */,
 				B391D6B51E5A20A900F916EF /* MyBeltViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,6 +608,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B374C4211E62310200B3B0CE /* blackbelt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B374C4221E62310200B3B0CE /* blackbelt.xcdatamodel */,
+			);
+			currentVersion = B374C4221E62310200B3B0CE /* blackbelt.xcdatamodel */;
+			path = blackbelt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B391D6A71E5A20A800F916EF /* Project object */;
 }
