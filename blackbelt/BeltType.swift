@@ -21,55 +21,52 @@ class WhiteBelt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
 
 class YellowBelt: Belt {
     var name: String = "Yellow"
     var color: UIColor = UIColor.yellow
-    //******* WHITE BELT SKILLS -- NEED TO UPDATE ********
-    var stances: [Skill] = [RestingStance(), AttentionStance(), GuardingStance(), ReadyStance(), ForwardStance(), SideStance(), DefensiveStance()]
-    var blocks: [Skill] = [LowBlock(), HighBlock(), OutToInForearmBlock(), PalmBlock()]
-    var hands: [Skill] = [ReversePunch(), Jab(), Cross(), Hammerfist()]
-    var foots: [Skill] = [FrontKick(), SideKick(), RoundKick(), AxKick()]
-    var rollFalls: [Skill] = [SeatedBackfall(), KneelingShoulderRoll(), LyingSideFall()]
+    var stances: [Skill] = [BackStance()]
+    var blocks: [Skill] = [InsideKnifeHandBlock(), OutsideKnifeHandBlock()]
+    var hands: [Skill] = [InsideKnifeHand(), OutsideKnifeHand(), Elbow(), PalmHeelStrike()]
+    var foots: [Skill] = [BackKick(), KneeStrike(), InsideCrescentKick(), OutsideCrescentKick(), HookKick()]
+    var rollFalls: [Skill] = [StandingBackFall(), KneelingShoulderRoll(), KneelingSideFall(), LyingSideFallAndOver()]
     var calisthenics: [Skill] = [PushUp(), SitUp()]
-    var philosophy: [Skill] = [MartialArtsEtiquette()]
-    var poomse: [Skill] = [TaegeukIlJang()]
-    var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var philosophy: [Skill] = [HowToBeAGoodPartner()]
+    var poomse: [Skill] = [TaegeukEeJang()]
+    var daeRyun: [Skill] = [SafetySparring()]
+    var hoSinSool: [Skill] = [MokJoRuKi(), DwiMokJoRuKi(), DuSonMok(), KaSum(), DeAshiAri(), Shrimping1()]
 }
 
 class YellowABelt: Belt {
     var name: String = "Advanced Yellow"
     var color: UIColor = UIColor.yellow
-    //******* WHITE BELT SKILLS -- NEED TO UPDATE ********
-    var stances: [Skill] = [RestingStance(), AttentionStance(), GuardingStance(), ReadyStance(), ForwardStance(), SideStance(), DefensiveStance()]
-    var blocks: [Skill] = [LowBlock(), HighBlock(), OutToInForearmBlock(), PalmBlock()]
-    var hands: [Skill] = [ReversePunch(), Jab(), Cross(), Hammerfist()]
-    var foots: [Skill] = [FrontKick(), SideKick(), RoundKick(), AxKick()]
-    var rollFalls: [Skill] = [SeatedBackfall(), KneelingShoulderRoll(), LyingSideFall()]
+    var stances: [Skill] = []
+    var blocks: [Skill] = []
+    var hands: [Skill] = [UpsetPunch(), VerticalPunch(), Backfist()]
+    var foots: [Skill] = [HoppingKick(), StompKick(), ShuffleSideKick()]
+    var rollFalls: [Skill] = [KneelingFrontFall(), StandingShoulderRollUp(), StandingShoulderRollSideFall(), StandingSideFall()]
     var calisthenics: [Skill] = [PushUp(), SitUp()]
-    var philosophy: [Skill] = [MartialArtsEtiquette()]
-    var poomse: [Skill] = [TaegeukIlJang()]
-    var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var philosophy: [Skill] = [AngerDefense1()]
+    var poomse: [Skill] = [TaegeukSamJang()]
+    var daeRyun: [Skill] = [SafetySparringBody()]
+    var hoSinSool: [Skill] = [HiRearBearHugArmsOut(), FrontBearHugArmsOut(), LoRearBearHugArmsOut(), DuKaSum(), Bridging()]
 }
 
 class GreenBelt: Belt {
     var name: String = "Green"
     var color: UIColor = UIColor.green
-    //******* WHITE BELT SKILLS -- NEED TO UPDATE ********
-    var stances: [Skill] = [RestingStance(), AttentionStance(), GuardingStance(), ReadyStance(), ForwardStance(), SideStance(), DefensiveStance()]
-    var blocks: [Skill] = [LowBlock(), HighBlock(), OutToInForearmBlock(), PalmBlock()]
-    var hands: [Skill] = [ReversePunch(), Jab(), Cross(), Hammerfist()]
-    var foots: [Skill] = [FrontKick(), SideKick(), RoundKick(), AxKick()]
-    var rollFalls: [Skill] = [SeatedBackfall(), KneelingShoulderRoll(), LyingSideFall()]
+    var stances: [Skill] = []
+    var blocks: [Skill] = [TwinKnifeHandBlock(), TwinFist()]
+    var hands: [Skill] = [JumpSpinBackfist(), Backhand()]
+    var foots: [Skill] = [StompKick(), TurningBackKick(), SpinCrescentKick(), JumpingKicks()]
+    var rollFalls: [Skill] = [StandingFrontFall(), RipCordDrill(), SittingBackShoulderRoll()]
     var calisthenics: [Skill] = [PushUp(), SitUp()]
-    var philosophy: [Skill] = [MartialArtsEtiquette()]
-    var poomse: [Skill] = [TaegeukIlJang()]
-    var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var philosophy: [Skill] = []
+    var poomse: [Skill] = [TaegeukSahJang()]
+    var daeRyun: [Skill] = [SafetySparringBody()]
+    var hoSinSool: [Skill] = [MuggersHold(), RearBearHugArmsTrapped(), CrossHandGrab(), RandoriDeAshiBari(), OSotoGariDrill(), ScissorSweep()]
 }
 
 class GreenABelt: Belt {
@@ -85,7 +82,7 @@ class GreenABelt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
 
 class BlueBelt: Belt {
@@ -101,7 +98,7 @@ class BlueBelt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
 
 class BlueABelt: Belt {
@@ -117,7 +114,7 @@ class BlueABelt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
 
 class BrownBelt: Belt {
@@ -133,7 +130,7 @@ class BrownBelt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
 
 class BrownABelt: Belt {
@@ -149,7 +146,7 @@ class BrownABelt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
 
 class RedBelt: Belt {
@@ -165,7 +162,7 @@ class RedBelt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
 
 class RedMBelt: Belt {
@@ -181,7 +178,7 @@ class RedMBelt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
 
 class RedABelt: Belt {
@@ -197,7 +194,7 @@ class RedABelt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
 
 class BodanBelt: Belt {
@@ -213,7 +210,7 @@ class BodanBelt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
 
 class Black1Belt: Belt {
@@ -229,7 +226,7 @@ class Black1Belt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
 
 class Black2Belt: Belt {
@@ -245,7 +242,7 @@ class Black2Belt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
 
 class Black3Belt: Belt {
@@ -261,7 +258,7 @@ class Black3Belt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
 
 class Black4Belt: Belt {
@@ -277,7 +274,7 @@ class Black4Belt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
 
 class Black5Belt: Belt {
@@ -293,5 +290,5 @@ class Black5Belt: Belt {
     var philosophy: [Skill] = [MartialArtsEtiquette()]
     var poomse: [Skill] = [TaegeukIlJang()]
     var daeRyun: [Skill] = [ShadowDrill(), EvasiveTagDrill(), EvadeCounterDrill(), Kicks5(), Zone5()]
-    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping()]
+    var hoSinSool: [Skill] = [SonMok(), YukSonMok(), SangSonMok(), PalGup(), UpSideDownBreakReleaseDrill(), UnbalanceDrill(), Shrimping0()]
 }
