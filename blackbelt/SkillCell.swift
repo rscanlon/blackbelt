@@ -31,33 +31,16 @@ class SkillCell: UITableViewCell {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.coreDataStack.persistentContainer.viewContext
         if sender.isSelected {
-            //remove skill from learnedSkills
-            let request: NSFetchRequest<LearnedSkill> = LearnedSkill.fetchRequest()
-            let entity = NSEntityDescription.entity(
-                forEntityName: "LearnedSkill", in: context)
-            request.entity = entity
-            
-            let pred = NSPredicate(format: "(id = %ld)", currentSkill.id)
-            request.predicate = pred
-            
-            do {
-                let results = try context.fetch(request as! NSFetchRequest<NSFetchRequestResult>) as! [LearnedSkill]
-                print("deleting \(results)")
+            if let results = getSavedSkillsForId(id: currentSkill.id) {
                 for result in results {
                     context.delete(result)
                 }
-            } catch let error {
-                print(error)
             }
-
         } else {
-            //TODO check if skill is already in there
-            //add skill to learnedSkills
             if (isLearned(id: currentSkill.id)) {
                 print("This isn't good...the id should not be in the list")
             }
             let newSkill = LearnedSkill.init(entity: NSEntityDescription.entity(forEntityName: "LearnedSkill", in:context)!, insertInto: context)
-
             newSkill.id = currentSkill.id
             newSkill.date = NSDate()
         }
@@ -66,6 +49,14 @@ class SkillCell: UITableViewCell {
     }
     
     func isLearned(id: Int32) -> Bool {
+        if let results = getSavedSkillsForId(id: id) {
+            return (results.count == 1)
+        } else {
+            return false
+        }
+    }
+    
+    func getSavedSkillsForId(id: Int32) -> [LearnedSkill]? {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.coreDataStack.persistentContainer.viewContext
         let request: NSFetchRequest<LearnedSkill> = LearnedSkill.fetchRequest()
@@ -73,16 +64,15 @@ class SkillCell: UITableViewCell {
             forEntityName: "LearnedSkill", in: context)
         request.entity = entity
         
-        let pred = NSPredicate(format: "(id = %ld)", currentSkill.id)
+        let pred = NSPredicate(format: "(id = %ld)", id)
         request.predicate = pred
         
         do {
-            let results = try context.fetch(request as! NSFetchRequest<NSFetchRequestResult>)
-            print(results)
-            return (results.count == 1)
+            let results = try context.fetch(request as! NSFetchRequest<NSFetchRequestResult>) as! [LearnedSkill]
+            return results
         } catch let error {
             print(error)
-            return false
+            return nil
         }
     }
 }
