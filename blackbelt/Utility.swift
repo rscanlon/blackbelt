@@ -9,12 +9,10 @@
 import Foundation
 
 class Utility {
-    func skillFromId(name: String) -> Skill? {
-        switch name {
-        case "test":
-            return BackKick();
-        default:
-            return nil;
+    func skillFromId(id: Int32) -> Skill? {
+        var skills = Constants.allSkills.filter { (skill) -> Bool in
+            return (skill.id == id)
         }
+        return skills.first
     }
 }
